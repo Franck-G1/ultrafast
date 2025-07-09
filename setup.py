@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='tap',
-    version='0.1',
+    version='0.11',
     packages=find_packages(),
     description='Ultrafast physical chemistry data analysis',
     author='franck Guignard',
