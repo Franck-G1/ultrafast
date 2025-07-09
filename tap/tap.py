@@ -172,13 +172,13 @@ def plot_ta(wl, t, ta_signal, title, xlim = [350, 800], levels = 20, cmap = "bwr
     level_list = np.linspace(0, vmax, levels)
 
     if "bwr" in cmap:
-        colormap = plt.cm.bwr(np.linsapce(0,1,levels))
+        colormap = plt.cm.bwr(np.linspace(0,1,levels))
     
     if "Reds" in cmap:
-        colormap = plt.cm.Reds(np.linsapce(0,1,levels))
+        colormap = plt.cm.Reds(np.linspace(0,1,levels))
 
     if "Blues" in cmap:
-        colormap = plt.cm.Blues(np.linsapce(0,1,levels))
+        colormap = plt.cm.Blues(np.linspace(0,1,levels))
     
     if force_bkg_to_0 is not None:
         colormap[:force_bkg_to_0] = 0
